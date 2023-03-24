@@ -32,7 +32,7 @@ alias tests="bundle exec rspec spec/features && bundle exec rspec
 spec/models"
 alias cdt="cd ~/turing"
 alias cov="open coverage/index.html"
-alias weather="curl -s wwtr.in/columbus"
+alias weather="curl -s wttr.in/Columbus"
 alias aliases="code ~/.zshrc"
 
 function clopen {
