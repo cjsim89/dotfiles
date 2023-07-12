@@ -23,6 +23,8 @@ PATH=$PATH:~/.pub-cache/bin:$PATH
 # Python
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/14/bin"
+# PHP, Composer, Laravel
+export PATH="$PATH:~/.composer/vendor/bin"
 
 alias bers="bundle exec rspec"
 alias setup="bundle install && rails db:{drop,create,migrate,seed}"
@@ -32,8 +34,14 @@ alias tests="bundle exec rspec spec/features && bundle exec rspec
 spec/models"
 alias cdt="cd ~/turing"
 alias cov="open coverage/index.html"
-alias weather="curl -s wttr.in/Columbus"
+alias weather="curl -s wttr.in/columbus"
 alias aliases="code ~/.zshrc"
+alias phpi="code /opt/homebrew/etc/php/8.2/php.ini"
+alias gs="git status"
+
+function gc {
+  git add . && git commit -m "$1"
+}
 
 function clopen {
    git clone "$1" $2 && code $2
