@@ -1,0 +1,31 @@
+{
+    "Pry breakpoint": {
+        "prefix": ["pry", "binding"],
+        "body": ["binding.pry"],
+        "description": "Creates a `binding.pry` breakpoint in Ruby."
+    }, 
+
+    "RSpec test setup": {
+        "prefix": ["RSpec."],
+        "body": ["RSpec.describe \"${1:label}\", type: :${2:type} do \n\t$0\nend"],
+        "description": "Creates RSpec file setup"
+    },
+
+    "RSpec Describe block": {
+        "prefix": ["describe"],
+        "body": ["describe \"${1:label}\" do \n\t$0\nend"],
+        "description": "Creates RSpec describe block"
+    },
+
+    "RSpec it block": {
+        "prefix": ["it"],
+        "body": ["it \"${1:label}\" do \n\t$0\nend"],
+        "description": "Creates RSpec it block"
+    },
+
+    "RSpec expect": { 
+        "prefix": ["expect"],
+        "body": ["expect(${1:object}).to ${2:test}"],
+        "description": "Creates generic expect line"
+    }
+}
